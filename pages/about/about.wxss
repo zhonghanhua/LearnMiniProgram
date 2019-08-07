@@ -1,0 +1,4 @@
+/* pages/about/about.wxss */
+.title{
+  color: rgb(67, 190, 122);
+}
