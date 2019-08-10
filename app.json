@@ -12,7 +12,6 @@
   },
   "tabBar": {
     "selectedColor": "#ff5777",
-    
     "list": [
       {
         "pagePath": "pages/about/about",
@@ -25,7 +24,8 @@
         "text": "联系QQ",
         "iconPath": "assets/tabbar/b.png",
         "selectedIconPath": "assets/tabbar/b-active.png"
-      },{
+      },
+      {
         "pagePath": "pages/about/about",
         "text": "客服",
         "iconPath": "assets/tabbar/a.png",
