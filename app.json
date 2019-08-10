@@ -2,5 +2,41 @@
   "pages": [
     "pages/about/about",
     "pages/home/home"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "yellow",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    
+    "list": [
+      {
+        "pagePath": "pages/about/about",
+        "text": "客服",
+        "iconPath": "assets/tabbar/a.png",
+        "selectedIconPath": "assets/tabbar/a-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "联系QQ",
+        "iconPath": "assets/tabbar/b.png",
+        "selectedIconPath": "assets/tabbar/b-active.png"
+      },{
+        "pagePath": "pages/about/about",
+        "text": "客服",
+        "iconPath": "assets/tabbar/a.png",
+        "selectedIconPath": "assets/tabbar/a-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "联系QQ",
+        "iconPath": "assets/tabbar/b.png",
+        "selectedIconPath": "assets/tabbar/b-active.png"
+      }
+    ]
+  }
 }
