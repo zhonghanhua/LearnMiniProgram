@@ -1,2 +1,18 @@
 <!--pages/about/about.wxml-->
 <text class="title">pages/about/about.wxml</text>
+<view>
+<!-- 点击按钮，获取用户数据 -->
+<button size="mini"
+        open-type="getUserInfo"
+        bindgetuserinfo="onGotUserInfo">
+获取用户信息
+</button>
+
+<text>name:{{name}}</text>
+
+<!-- 直接展示用户信息 -->
+<view>
+  <open-data type="userAvatarUrl"></open-data>
+</view>
+
+</view>
