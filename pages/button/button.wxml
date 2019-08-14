@@ -1,0 +1,14 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button的基本使用 -->
+<button>按钮</button>
+
+<!-- 2.size属性：mini -->
+<button size="mini">mini按钮</button>
+
+<!-- 3.type属性： -->
+<button size="mini" type="primary">type primary按钮</button>
+<button size="mini" type="default">type default按钮</button>
+<button size="mini" type="warn">type warn按钮</button>
+
+<!-- 4.plain：镂空小果 -->
+<button size="mini" plain>plain按钮</button>
