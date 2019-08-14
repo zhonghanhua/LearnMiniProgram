@@ -1,0 +1,22 @@
+
+<!-- 1.view的基本使用 -->
+<view class="box">哈哈哈</view>
+<view>略略略</view>
+
+<!-- 2.hover-class点击样式 -->
+<view class="box1"
+       hover-class="box2"
+       hover-stay-time="0">
+点击样式
+</view>
+
+<!-- 3.hover-stop-propagation阻止父view出现点击态 -->
+<view class="box3" hover-class="box3-hover">
+  <view class="box1"
+       hover-class="box2"
+       hover-stay-time="0"
+      hover-stop-propagation
+       >
+点击样式
+  </view>
+</view>

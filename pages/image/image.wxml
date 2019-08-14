@@ -1,0 +1,35 @@
+
+<!-- 1.image基本使用，默认大小320*240 -->
+<!-- image可以用单标签也可以双标签 -->
+<!-- 注意路径，..返回上一层目录 -->
+<image src="../../assets/text/4.png"
+        mode="widthFix"
+        class="imageSize"
+        />
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+class="imageSize"
+mode="widthFix"
+/>
+<!-- 选择相册的图片，调用系统api，wx.chooseImage -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"/>
+
+<!-- 2.bindload：监听图片加载完成 -->
+<view>----------------------------</view>
+<image 
+wx:for="{{1}}"
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+bindload="handleImageLoad"
+lazy-load
+/>
+
+<!-- 3.show-menu-by-longpress长按出现识别小程序码 -->
+<view>----------------------------</view>
+<image 
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+bindload="handleImageLoad"
+show-menu-by-longpress
+lazy-load
+/>
+
+
