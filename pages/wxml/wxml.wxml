@@ -1,0 +1,53 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 1.mastache -->
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname + ' ' + lastname}}</view>
+<view>{{age >= 18 ? '成年人' : '未成年人'}}</view>
+<view >{{nowTime}}</view>
+<button size="mini" bindtap="handeClick">切换颜色</button>
+<view class="box {{isActive ? 'active':''}}">哈哈哈</view>
+
+<!-- 条件判断 -->
+<view> ---------单条件判断---------</view>
+<button size="mini" bindtap="handleSwitchShow">切换显示隐藏</button>
+<view wx:if='{{isShow}}'>呵呵呵呵</view>
+
+<view> ---------多条件判断--------</view>
+<button size="mini" bindtap="handleIncrement">增加分数</button>
+<view wx:if='{{score >= 90}}'>优秀</view>
+<view wx:elif='{{score >= 80}}'>良好</view>
+<view wx:elif='{{score >= 60}}'>及格</view>
+<view wx:else>不及格</view>
+
+<!-- hidden属性 -->
+<!-- hidden和wx:if的区别：hidden隐藏后，组件依然存在
+wx:if='{{false}}'，组件是不存在的（根本就不创建） -->
+<view hidden="{{true}}">我是通过hidden控制的内容</view>
+<view wx:if='{{false}}'>我是通过wx:if控制的内容</view>
+
+<!-- 列表渲染wx:for -->
+<!-- <view> ---------列表渲染wx:for--------</view> -->
+<!-- 遍历数组/字符串/数字 -->
+<!-- <view wx:for='{{["abc","cba","nba"]}}'>{{item}}.{{index}}</view>
+<view wx:for='abcd'>{{item}} {{index}}</view>
+<view wx:for='{{5}}'>{{item}} {{index}}</view> -->
+
+<view>---block切换显示隐藏，看Wxml变化----</view>
+<block wx:if='{{isShow}}'>
+  <button>按钮</button>
+  <view>哈哈哈哈</view>
+  <text>我是</text>
+</block>
+
+<view>----item/index起名字------</view>
+<view wx:for='{{movies}}' 
+      wx:for-item='movi'
+      wx:for-index='u'>{{movi}} {{u}}
+</view>
+
+<!-- template及导入 -->
+<import src="/wxml/template.wxml"/>
+
+<template is='contentItem' data="{{btnName:'按钮',content:'viewview'}}"/>
+
+<include src="/wxml/header.wxml"/>

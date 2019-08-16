@@ -1,0 +1,12 @@
+//格式化价格，留几位小数
+function priceFormat(price , number){
+  //如果number位空，则number为2，||或
+  var number = number || 2;
+  //将price转换为Float类型，防止客户输入String
+  var f_price = parseFloat(price);
+  return f_price.toFixed(number);
+}
+//允许使用模块
+module.exports = {
+  priceFormat: priceFormat
+}

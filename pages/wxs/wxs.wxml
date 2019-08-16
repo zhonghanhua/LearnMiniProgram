@@ -1,0 +1,7 @@
+<!--pages/wxs/wxs.wxml-->
+
+<!-- 导入wxs文件，并设置模块名为format供本wxml调用 -->
+<wxs src='../../wxs/format.wxs' module='format'/>
+<!-- 调用wxs中的priceFormat函数，将20.8974654保留2位小数 -->
+<view>{{format.priceFormat(20.8974654,2)}}</view>
+
